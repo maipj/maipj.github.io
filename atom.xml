@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maipj.github.io</id>
     <title>Gridea</title>
-    <updated>2021-03-21T05:22:40.298Z</updated>
+    <updated>2021-03-22T13:08:27.515Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maipj.github.io"/>
     <link rel="self" href="https://maipj.github.io/atom.xml"/>
@@ -10,6 +10,49 @@
     <logo>https://maipj.github.io/images/avatar.png</logo>
     <icon>https://maipj.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[英语翻译（1）高中英语60几分渣渣学习笔记]]></title>
+        <id>https://maipj.github.io/post/ying-yu-fan-yi-1gao-zhong-ying-yu-60-ji-fen-zha-zha-xue-xi-bi-ji/</id>
+        <link href="https://maipj.github.io/post/ying-yu-fan-yi-1gao-zhong-ying-yu-60-ji-fen-zha-zha-xue-xi-bi-ji/">
+        </link>
+        <updated>2021-03-21T05:29:10.000Z</updated>
+        <summary type="html"><![CDATA[<pre><code>         There children in every classroom have a diagnosable mental health condition.
+    Half of these are behavioural disorders,while one third are emotional disorders such
+     as stress,anxiety and depression,which often become outwardly apparent through self
+     -harm.There was an astonishing 52 per cent jump in hospital addmissions for
+     children and young people who had harmed themselves between 2009 and 2015.
+    每个教室的孩子都有可诊断的精神状况。有一半是有行动障碍的，而三分之一的是情绪障碍，例如压力、焦虑和沮丧，这是经常是通过自残而表现出来的。在2009到2015年间有百分之52的孩子和年轻人因为伤害他们自己而急诊入院。
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<pre><code>         There children in every classroom have a diagnosable mental health condition.
+    Half of these are behavioural disorders,while one third are emotional disorders such
+     as stress,anxiety and depression,which often become outwardly apparent through self
+     -harm.There was an astonishing 52 per cent jump in hospital addmissions for
+     children and young people who had harmed themselves between 2009 and 2015.
+    每个教室的孩子都有可诊断的精神状况。有一半是有行动障碍的，而三分之一的是情绪障碍，例如压力、焦虑和沮丧，这是经常是通过自残而表现出来的。在2009到2015年间有百分之52的孩子和年轻人因为伤害他们自己而急诊入院。
+</code></pre>
+<!-- more -->
+<pre><code>            Schools and teachers have consistently reported the scale of the problem since 2009.
+    Last year,over half of teachers reported that more of their pupils experience mental health problem than in the past.But teachers also consistently report how ill-equipped they feel to meet pupils' mental health  needs,and often cite a lack of training,expertise and support from the National Health Service(英国国家医疗服务体系).
+    自2009年来学校和老师始终如一地报告的严重性。在过去的上一年里，超过一般的教师在报告里说明了学生经历的精神健康问题。但是教师们总是一致地报告设备差以至于他们感觉遇到学生精神健康需要的时候和经常缺少英国国家医疗服务体系的培训、经验和支持。
+</code></pre>
+<!-- more -->
+<pre><code>          Part of the reason for the increased pressure on schools is that there are now fewer'early intervention(干预)'and low-level mental health services based in the community.Cuts to local authority budgets since 2010 have resulted in a significant decline of these services,despite stong evidence of their effectiveness in preventing crises further down the line.
+    学校压力增加的原因是现在的早期干预和在社区的基础低水平的心理健康服务很少。从2010年，削减了当地政府的预算，导致了一些重大的服务下降，尽管有证据表明进一步使者下降而有效防止危机。
+</code></pre>
+<!-- more -->
+<pre><code>          The only way to break the pressures on both mental health services and schools is to reinvest in early intervention service inside schools.
+    唯一的打破压力的方法就是在学校里面学校最好尽早提供服务干预学生们的心理健康。
+</code></pre>
+<!-- more -->
+<pre><code>          There are strong argument for why schools are best placed to provide mental health services.School see young people more than any other service,which give them a unique ability to get to hard-to-reach children and young people and build meaningful relationships with them over time.Recent studio have shown that childen and young people largey prefer to see a counsellor in school rather than in an outside environment.Young people have reported that for low-level conditions such as stress and anxiety,a clinical setting can sometimes be daunting(令人却步的).
+    关于为什么学校最有能力提供心理健康服务的论点存在强烈争议。学校对年轻人的重视程度超过其他任何服务，这赋予他们独特的能力，可以帮助难以接触的儿童和年起人，并随着时间的推移与他们建立有意义的关系。最近的工作室显示，儿童和年轻人更喜欢在学校而不是在外面看见辅导员。年轻人报告说，对于低水平的状况，例如压力和焦虑，临床环境有时可能令人生畏。
+         There are already examples of innovative schools which combine mental health and wellbeing provision with a strong academic curriculum.This will,though,require a huge cultural shift.Politicians,policymakers,cmmissioners and school leaders must be brave enough to make the leap towards reimaginig schools as providers of health as well as education services.
+    这些已经成为创新学校的典范，它结合了心理健康和福祉以及强大的学术课程。但是，这将需要巨大的文化转变。政治家、政策制定者、执行官和学校领导者必须足够勇敢，以实现重新构想学校作为健康和教育服务提供者的飞跃。
+</code></pre>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[myblog]]></title>
         <id>https://maipj.github.io/post/myblog/</id>
