@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>python正则表达式的随手笔记 | Gridea</title>
-<link rel="shortcut icon" href="https://maipj.github.io/favicon.ico?v=1617290347913">
+<link rel="shortcut icon" href="https://maipj.github.io/favicon.ico?v=1617335730228">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maipj.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="python正则表达式的随手笔记 | Gridea - Atom Feed" href="https://maipj.github.io/atom.xml">
@@ -27,7 +27,7 @@ mo=op.search('我的电话为 444-123-5678')         当..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://maipj.github.io">
-  <img class="avatar" src="https://maipj.github.io/images/avatar.png?v=1617290347913" alt="">
+  <img class="avatar" src="https://maipj.github.io/images/avatar.png?v=1617335730228" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -87,7 +87,7 @@ mo=op.search('我的电话为 444-123-5678')         当..." />
                 2021-04-01
               </span>
               <span>
-                2 min read
+                3 min read
               </span>
               
             </div>
@@ -115,8 +115,35 @@ search( )返回的对象中可以用group( )。</p>
 利用括号分组：<br>
 ( r'(\d\d\d)-(\d\d\d-\d\d\d\d)' )    第一对括号则是group(1):\d\d\d     而第二对括号则是group（2）: \d\d\d-\d\d\d\d       。这里只不过是通过调用gruop（）中的参数那样调用，而groups（）则把所有分组组合成一个元组就像( '\d\d\d','\d\d\d-\d\d\d\d' )</p>
 <p>用管道匹配对各分组:<br>
-re.copile(r'Batman|Teain Fey')    这就像BAtman 或者Teain Fey<br>
-跟以上一样，search遇到第一个就返回值，然后再调用</p>
+op=re.copile(r'Batman|Teain Fey')    这就像BAtman 或者Teain Fey<br>
+跟以上一样，search遇到第一个就返回值，然后再调用group( )；<br>
+比如        tt=op.search('Batman Teain Fey')<br>
+&gt;&gt;&gt;tt.group()<br>
+Batman<br>
+反则若search字符串调转过来结果也会相反</p>
+<pre><code>           其中还有一个知识点比较重要：可以用口号进行统计管理: compile(r'Bat(man|moblie|copter|bat)')
+           .group()即可输出第一个匹配的字符串
+           .group(1)即可出现括号里面匹配字符串中的组成成员 
+
+
+
+
+
+
+
+
+
+
+
+    现在讲一下新内容
+</code></pre>
+<p>不区分大小写的匹配：<br>
+也就在用re.compile()中加多一个参数，即re.compile('xxx',re.I)或者re.IGNORECASE<br>
+re.compile中的xxx在search中出现大小写都可以返回xxx</p>
+<p>用sub（）方法替换字符串：<br>
+sub（字符串a，字符串b）字符串a是在字符串b中找到正则表达式中的数据后把该数据替换并返回字符串，字符串a还可以用   r'\1***' 显示第一个字母隐藏后面的</p>
+<p>组合使用  大小写  和 读换行符  以及编写注释:<br>
+可以在re.compile(1,2)   2号位用 “ | ”管道字符经变量组合起来</p>
 
               </div>
               <div class="toc-container">
