@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maipj.github.io</id>
     <title>Gridea</title>
-    <updated>2021-04-03T01:24:36.256Z</updated>
+    <updated>2021-04-05T02:07:11.255Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maipj.github.io"/>
     <link rel="self" href="https://maipj.github.io/atom.xml"/>
@@ -10,6 +10,63 @@
     <logo>https://maipj.github.io/images/avatar.png</logo>
     <icon>https://maipj.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[c++的随手笔记]]></title>
+        <id>https://maipj.github.io/post/cde-sui-shou-bi-ji/</id>
+        <link href="https://maipj.github.io/post/cde-sui-shou-bi-ji/">
+        </link>
+        <updated>2021-04-05T01:35:32.000Z</updated>
+        <content type="html"><![CDATA[<p>现在学到c++的常对象成员时，感到有点不习惯。<br>
+常数据成员就是在类体中定义常元素，即const int iop; //定义iop作为长数据成员。<br>
+其初始化只能通过构造函数的参数初始化表对常数据成员进行初始化，任何其他函数都不能对常数据成员赋值</p>
+<p>不能 用<br>
+赋值的形式初始化<br>
+例如：     class op<br>
+{<br>
+public:<br>
+int hight;<br>
+op（int h）<br>
+{<br>
+hight=h;<br>
+}<br>
+}                           这是非法的</p>
+<pre><code>            只能参数初始化‘表’即     op（int h）:hight(h){}       这样初始化
+    虽然说之前是一样的，但其性质和执行时间不一样。
+</code></pre>
+<p>const可以用在定义对象和在类体定义一个数据成员：<br>
+const Student a（1，2，3）     在主函数中定义对象      ①<br>
+const int a；     在类体中定义一个数据成员                     ②<br>
+这两个的区别在于①式的const是让这个对象成为常对象，只能调用常成员函数<br>
+而②式是定义数据成员是常数据成员，</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[英文歌]]></title>
+        <id>https://maipj.github.io/post/ying-wen-ge/</id>
+        <link href="https://maipj.github.io/post/ying-wen-ge/">
+        </link>
+        <updated>2021-04-03T02:47:24.000Z</updated>
+        <content type="html"><![CDATA[<p>Dream It Possible<br>
+Salt<br>
+Monsters<br>
+East of Eden<br>
+Take It Off<br>
+Shivers<br>
+Home(Radio Edit)<br>
+Alive (Original Mix)<br>
+If You Feel My Love<br>
+Supperstar<br>
+Stay<br>
+Solo<br>
+Bikini Body<br>
+Me Too<br>
+We will Rock You<br>
+Heartbeats<br>
+Take Me Hand<br>
+Wrap Me In Plastic<br>
+Little June</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[英语翻译（1）高中英语60几分渣渣学习笔记]]></title>
         <id>https://maipj.github.io/post/xuezabiji/</id>
