@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maipj.github.io</id>
     <title>Gridea</title>
-    <updated>2021-04-05T02:07:11.255Z</updated>
+    <updated>2021-04-05T07:29:41.494Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maipj.github.io"/>
     <link rel="self" href="https://maipj.github.io/atom.xml"/>
@@ -10,6 +10,93 @@
     <logo>https://maipj.github.io/images/avatar.png</logo>
     <icon>https://maipj.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[C语言库函数丶文件操作]]></title>
+        <id>https://maipj.github.io/post/c-yu-yan-ku-han-shu-zhu-wen-jian-cao-zuo/</id>
+        <link href="https://maipj.github.io/post/c-yu-yan-ku-han-shu-zhu-wen-jian-cao-zuo/">
+        </link>
+        <updated>2021-04-05T05:06:42.000Z</updated>
+        <content type="html"><![CDATA[<p>文件操作：<br>
+文件打开：<br>
+fopen()     ：<br>
+表头 stdio.h<br>
+FILE *fopen(const  char  *path,char *made);<br>
+path字符串是打开文件的路径及文件名，made字符串代表着                                  流形态（意思是打开的方式）<br>
+made的字符串有以下几种：<br>
+r  打开只读文件，文件必须存在，文件指针指向头<br>
+r+打开可读写文件，文件必须存在，同上<br>
+w打开只写文件，若文件存在则清空文件，若文件不                                           存在则新建该文件，文件指针指向头<br>
+w+打开可读写我呢见，若文件存在则清空文件，若                                           文件不存在则新建文件，同上<br>
+a以附加的方式打开只写文件。若文件不存在，则会                                 新建该文件，若存在，文件指针指向文件尾，文件内容会保留。<br>
+a+以附加的方式打开可读写文件。若文件不存在，                           则会新建该文件，若文件存在，文件指针指向文件尾，文件内容会保留。<br>
+若都加个b，如 ab 则是打开二进制只写文件<br>
+文件打开成功，返回文件指针，若失败则返回NULL，并把错问                                  代码存在errno<br>
+使用例子  FILE *p;<br>
+p=fopen(&quot;D://weism//awa.txt&quot;,'r')   意思是以只读的方式打开文件awa.txt，并返回文件指针给p，用p对文件操作</p>
+<p>fprintf：  表头  stdio.h<br>
+传送格式化输出到一个文件中（就是把数据写进文件）<br>
+int fprintf(FILE <em>stream,char <em>format[,argument]);<br>
+FILE</em>  一个FILE类型指针<br>
+char</em> 格式化输入函数，与printf格式一样<br>
+返回值，成功返回转换的字节数，失败返回一个负数<br>
+例如  op=fopen(&quot;/local/test.txt&quot;,&quot;a+&quot;);<br>
+fprintf(fp,&quot;%s\n&quot;,str);     就是打str的内容写进文件尾部并加多一个换行</p>
+<p>fscanf:    表头stdio.h<br>
+从一个流中执行格式化输入（就是把文件的内容输出到缓冲区）<br>
+int fscanf(FILE* stram,char* format[,argument]);<br>
+FILE* 一个FILE类型指针<br>
+char* 格式化输出函数，和scanf里面的格式一样<br>
+返回值：成功返回转换的字节数，失败返回一个负数<br>
+op=fopen(&quot;/local/test.txt&quot;,&quot;a+&quot;);<br>
+fscanf(op,&quot;%s&quot;,str);    从文件指针中取，遇到换行停止把字符串复制到str中</p>
+<p>clearerr(清除文件流的错误旗标) ：   表头stdio.h<br>
+定义函数void clearerr(FILE* stream);<br>
+函数说明clearerr（）清除参数stream指针我呢见流所使用的错误旗标</p>
+<p>feof：      表头stdio.h<br>
+int feof(FILE *stream)<br>
+测试一个文件流的文件尾表示，如果该标志被是指就返回非零<br>
+意思是若文件指针指向文件尾部，返回非零值，若不指向尾部则返回0</p>
+<p>ferror:     int ferror(FILE* stream)<br>
+读写文件出错检测，在输入输出是是否出错<br>
+返回0，表示未出错，否则出错</p>
+<pre><code>    文件关闭:
+             
+              int fclose(FILE *stream)  ：  表头stdio.h
+                    stram 为指向文件流指针（指向文件的指针）
+                    返回值，，成功返回0  失败返回EOF，并把错误代码存到errno
+                    会让缓冲区的数据写入文件，并释放文件指针和有关缓冲区
+                    使用fopen必须用fclose关闭，若不关闭，会使缓冲区的数据不写进磁                          盘文件中，导致在程序中修改的内容白白操作
+</code></pre>
+<p>fdopen(将文件描述词转尾文件指针)：   表头stdio.h<br>
+FILE* fdopen(int fildes,const char* mode);<br>
+将参数fildes的文件描述次，转换尾对应的文件指针后返回。参数mode字符串代表着文件指针的流形态，此形态必须和原先文件描述此读写模式相同。关于mode字符串格式与fopen一样<br>
+返回值：转换成功时返回指向该流的文件指针，失败返回NULL，并把错误代码存在erron中<br>
+例如：  FILE*op=fdopen(0,&quot;w+&quot;);<br>
+fprintf(op,&quot;&quot;%s\n&quot;,&quot;awdwa&quot;);<br>
+fclose(op);</p>
+<p>fflush（更新缓冲区）：setbuf表头stdio.h<br>
+int fflush(FILE * stream);<br>
+函数说明fflush（）会强迫将缓冲区内的数据写会参数stream指定的文件中。<br>
+fflush会将所有打开的文件数据更新。（意思是把之前的数据更改去处理文件）<br>
+返回值：成功返回0，失败返回EOF，并把错误代码存到erron中<br>
+错误代码EBADF单数stream指定的文件未被打开，或打开状态为只读。其他错误代码参考               weite（）。</p>
+<p>fgetc（由文件中读取一个字符）：   表头stdio.h<br>
+int fgetc（FILE * stream）；<br>
+从参数stream所指的文件中读取一个字符，若督导文件尾而无数据是便返回EOF。<br>
+返回值：返回读取到的字符，若到达文件尾返回EOF<br>
+例如：   while((c=fgetc(op))!=EOF){printf(&quot;%c&quot;,c);}</p>
+<p>fgets(从文件中读取一字符串):    表头stdio.h<br>
+char <em>fgets(char</em> s,int size,FILE * stream);<br>
+读到的字符存到参数s中，读到文件换行符、文件尾或读到size-1个字符位止，最后加上              '\0'作为字符串结束<br>
+返回值:成功返回s指针，返回NULL表示有错误<br>
+例如：   fputs（fgets（s，80，op），stdout）；</p>
+<p>fileno（返回文件流所使用的我呢见描述词）：  表头stdio.h<br>
+Int fileno(FILE* stream);<br>
+取得参数stream指定文件流所使用得文件描述词<br>
+返回值：返回文件描述词<br>
+例如：  int fd=fileno(op);</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[c++的随手笔记]]></title>
         <id>https://maipj.github.io/post/cde-sui-shou-bi-ji/</id>
