@@ -1,194 +1,165 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>Gridea</title>
-<link rel="shortcut icon" href="https://maipj.github.io/favicon.ico?v=1617631567834">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://maipj.github.io/favicon.ico?v=1618123967399">
 <link rel="stylesheet" href="https://maipj.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Gridea - Atom Feed" href="https://maipj.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="温故而知新" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="温故而知新，可以为师矣">
+    
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://maipj.github.io">
-  <img class="avatar" src="https://maipj.github.io/images/avatar.png?v=1617631567834" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://maipj.github.io">
+        <img src="https://maipj.github.io/images/avatar.png?v=1618123967399" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="https://maipj.github.io/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="https://maipj.github.io/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新，可以为师矣
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://maipj.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://maipj.github.io/post/ri-ji-zhu-fan-zao-de-yi-tian/">
-        <h2 class="post-title">日记丶烦躁的一天</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2021-04-05
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://maipj.github.io/post/c-yu-yan-ku-han-shu-zhu/">
-        <h2 class="post-title">C语言库函数丶</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2021-04-05
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://maipj.github.io/post/c-yu-yan-ku-han-shu-zhu-wen-jian-cao-zuo/">
-        <h2 class="post-title">C语言库函数丶文件操作</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2021-04-05
-        </span>
-        <span>
-          6 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://maipj.github.io/post/cde-sui-shou-bi-ji/">
-        <h2 class="post-title">c++的随手笔记</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2021-04-05
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://maipj.github.io/post/ying-wen-ge/">
-        <h2 class="post-title">英文歌</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2021-04-03
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://maipj.github.io/post/xuezabiji/">
-        <h2 class="post-title">英语翻译（1）高中英语60几分渣渣学习笔记</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2021-03-21
-        </span>
-        <span>
-          5 min read
-        </span>
-        
-          <a href="https://maipj.github.io/tag/U2s9vGBlG/" class="post-tag">
-            # 无敌
-          </a>
-        
-      </div>
-      
-        <a href="https://maipj.github.io/post/xuezabiji/" class="post-feature-image" style="background-image: url('https://maipj.github.io/post-images/xuezabiji.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <pre><code>         There children in every classroom have a diagnosable mental health condition.
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://maipj.github.io/post/ri-ji-zhu-fan-zao-de-yi-tian/">
+                  <h2 class="post-title">日记丶烦躁的一天</h2>
+                </a>
+                <div class="post-date">
+                  2021-04-05
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://maipj.github.io/post/c-yu-yan-ku-han-shu-zhu-wen-jian-cao-zuo/">
+                  <h2 class="post-title">C语言库函数丶文件操作</h2>
+                </a>
+                <div class="post-date">
+                  2021-04-05
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://maipj.github.io/post/cde-sui-shou-bi-ji/">
+                  <h2 class="post-title">c++的随手笔记</h2>
+                </a>
+                <div class="post-date">
+                  2021-04-05
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://maipj.github.io/post/ying-wen-ge/">
+                  <h2 class="post-title">英文歌</h2>
+                </a>
+                <div class="post-date">
+                  2021-04-03
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://maipj.github.io/post/xuezabiji/">
+                  <h2 class="post-title">英语翻译（1）高中英语60几分渣渣学习笔记</h2>
+                </a>
+                <div class="post-date">
+                  2021-03-21
+                </div>
+                <div class="post-abstract">
+                  <pre><code>         There children in every classroom have a diagnosable mental health condition.
     Half of these are behavioural disorders,while one third are emotional disorders such
      as stress,anxiety and depression,which often become outwardly apparent through self
      -harm.There was an astonishing 52 per cent jump in hospital addmissions for
@@ -196,73 +167,81 @@
     每个教室的孩子都有可诊断的精神状况。有一半是有行动障碍的，而三分之一的是情绪障碍，例如压力、焦虑和沮丧，这是经常是通过自残而表现出来的。在2009到2015年间有百分之52的孩子和年轻人因为伤害他们自己而急诊入院。
 </code></pre>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://maipj.github.io/post/myblog/">
-        <h2 class="post-title">myblog</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2021-03-21
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://maipj.github.io/post/hello-gridea/">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2018-12-12
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://maipj.github.io/tag/Zd227sYQt/" class="post-tag">
-            # Gridea
-          </a>
-        
-      </div>
-      
-        <a href="https://maipj.github.io/post/hello-gridea/" class="post-feature-image" style="background-image: url('https://maipj.github.io/post-images/hello-gridea.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+                </div>
+              </div>
+              
+                <a class="right" href="https://maipj.github.io/post/xuezabiji/">
+                  <div class="feature-container" style="background-image: url('https://maipj.github.io/post-images/xuezabiji.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://maipj.github.io/post/myblog/">
+                  <h2 class="post-title">myblog</h2>
+                </a>
+                <div class="post-date">
+                  2021-03-21
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://maipj.github.io/post/hello-gridea/">
+                  <h2 class="post-title">Hello Gridea</h2>
+                </a>
+                <div class="post-date">
+                  2018-12-12
+                </div>
+                <div class="post-abstract">
+                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-      </div>
-    </article>
+                </div>
+              </div>
+              
+                <a class="right" href="https://maipj.github.io/post/hello-gridea/">
+                  <div class="feature-container" style="background-image: url('https://maipj.github.io/post-images/hello-gridea.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
   
 </div>
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
-
-    
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://maipj.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
+        </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
   </body>
 </html>

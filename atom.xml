@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maipj.github.io</id>
     <title>Gridea</title>
-    <updated>2021-04-05T14:06:14.466Z</updated>
+    <updated>2021-04-11T06:53:22.617Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maipj.github.io"/>
     <link rel="self" href="https://maipj.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>温故而知新，可以为师矣</subtitle>
     <logo>https://maipj.github.io/images/avatar.png</logo>
     <icon>https://maipj.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
@@ -19,37 +19,6 @@
         <content type="html"><![CDATA[<p>今天，又是发牢骚的一天，当你在青春无限美好的时光里，你竟然在看电影、打游戏？对这样可以释放压力，但是你看看那些表面很厉害的人，虽然我不确定他到底有没有实力，但是他可以为了表面的现象而付出努力，努力如何别人不知道的弄成自己知道的，虽然我在这里语无伦次，但有那个意思就对了。<br>
 做大事都是要学基础的，没有基础的做只是浪费时间，即使成功了，那也是运气罢了，要以学习基础后的思想加以创新，再把其实现，这才是单身人士的爱好。。<br>
 加油，单身人士，努力实现自己梦想，单身狗，，汪汪！！！噢 ~~~呜。。。。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[C语言库函数丶]]></title>
-        <id>https://maipj.github.io/post/c-yu-yan-ku-han-shu-zhu/</id>
-        <link href="https://maipj.github.io/post/c-yu-yan-ku-han-shu-zhu/">
-        </link>
-        <updated>2021-04-05T07:35:10.000Z</updated>
-        <content type="html"><![CDATA[<p>math.h：<br>
-int abs(int x)  求整数x得绝对值    返回计算结果<br>
-double fabs(double x)求双精度实数x的绝对值  返回计算结果<br>
-double acos(double x)计算cos-1（x）的值   返回计算机过，x在-1~1<br>
-double asin(double x)计算sin-1(x)的值，返回计算结果，x在-1~1<br>
-double atan(double x)计算tan-1(x)的值，返回计算结果，<br>
-double atan2(double x)计算tan-1(x/y)的值，返回计算结果<br>
-double cos(double x)计算cos(x)的值，返回计算机过，x的单位尾弧度<br>
-double cosh(double x)计算双曲余弦cosh(x)的值<br>
-double exp(double x)求ex的值<br>
-double fabs(double x)求双精度实数的绝对值<br>
-double floor(double x)求不大于双精度实数x的最大整数<br>
-double fmod(double x,double y)求x/y整除后的双精度余数<br>
-double frexp(double val,int <em>exp)把双精度val分解尾数和以2为敌的指数n，即val=x</em>2n，存放在exp所指的变量中，返回位数x      0.5&lt;=x&lt;1<br>
-double log(double x)求ln x ，x&gt;0<br>
-double lug10(double x)求log10x，x&gt;0<br>
-double modf(double val,double *ip)把双精度val分解成整数部分和小数部分，整数部分存放在ip所指的变量中，返回小数部分<br>
-doble pow(double x,double y)计算xy的值<br>
-double sin(double x)计算sin(x)，x的单位为弧度<br>
-double sinh(double x)计算x的双曲正弦函数sinh(x)的值<br>
-double sqrt(double x)计算x的平方，x&gt;=0<br>
-double tan(double x)计算tan(x)<br>
-double tanh(double x)计算x的双曲正切函数tanh(x)的值</p>
 ]]></content>
     </entry>
     <entry>
